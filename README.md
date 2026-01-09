@@ -64,24 +64,26 @@ Final Multimodal Response (Text + Image + Audio)
 
 ## 📂 Project Structure
 
-flightai_airline_assistant/
-├── app/
-│ ├── main.py # Application entry point
-│ ├── config.py # Configuration & constants
-│ ├── prompts.py # System prompts
-│ ├── services/ # Business logic (DB, image, audio, OpenAI)
-│ ├── tools/ # Tool schemas & handlers
-│ └── ui/ # Gradio UI
-│
-├── database/
-│ ├── seed_prices.sql # DB schema & seed data
-│ └── build_db.py # DB creation script
-│
-├── docs/ # Documentation & screenshots
-├── .env.example # Environment variable template
-├── pyproject.toml # Dependencies (uv)
-├── uv.lock # Locked dependency versions
-└── README.md
+### Root
+- `app/` – Application source code
+- `database/` – Database schema and setup scripts
+- `docs/` – Documentation and screenshots
+- `.env.example` – Environment variable template
+- `pyproject.toml` – Project dependencies (uv)
+- `uv.lock` – Locked dependency versions
+- `README.md` – Project documentation
+
+### app/
+- `main.py` – Application entry point
+- `config.py` – Configuration and constants
+- `prompts.py` – System prompts
+- `services/` – Business logic (database, image, audio, OpenAI)
+- `tools/` – Tool schemas and handlers
+- `ui/` – Gradio user interface
+
+### database/
+- `seed_prices.sql` – Database schema and seed data
+- `build_db.py` – Database creation script
 
 ---
 
